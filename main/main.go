@@ -9,9 +9,12 @@ import (
 	"github.com/joho/godotenv"
 
 	F "github.com/off-chain-storage/comparing-offchain-firebase/firebase"
+	U "github.com/off-chain-storage/comparing-offchain-firebase/utils"
 )
 
 func main() {
+	U.Log_init()
+
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Fatal("Error loading .env file")
