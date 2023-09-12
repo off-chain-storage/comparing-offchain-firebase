@@ -18,6 +18,7 @@ func main() {
 	}
 
 	startTime := time.Now()
+
 	ctx := context.Background()
 	client := F.DBClient()
 

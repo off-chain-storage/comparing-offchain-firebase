@@ -25,7 +25,6 @@ func DBClient() *firestore.Client {
 	return dbInstance.client
 }
 
-// makeDBClient Client 주입
 func makeDBClient(rtb *FirestoreDB) {
 	// Init FireStore SDK
 	opt := option.WithCredentialsFile(os.Getenv("GOOGLE_APPLICATION_CREDENTIALS"))
