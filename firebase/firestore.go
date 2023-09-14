@@ -2,12 +2,15 @@ package firebase
 
 import (
 	"context"
+	"encoding/json"
 	"log"
 	"os"
 	"sync"
 
 	"cloud.google.com/go/firestore"
 	"google.golang.org/api/option"
+
+	U "github.com/off-chain-storage/comparing-offchain-firebase/utils"
 )
 
 type FirestoreDB struct {
@@ -37,4 +40,46 @@ func makeDBClient(rtb *FirestoreDB) {
 	// defer client.Close()
 
 	rtb.client = client
+}
+
+func CreateDoc() {
+	ctx := context.Background()
+	client := DBClient()
+
+	_, err := client.Doc("User/User13818").Create(ctx, map[string]interface{}{
+		"capital": "Denver",
+		"pop":     5.5,
+	})
+	U.CheckErr(err)
+}
+
+func UpdateDoc() {
+	ctx := context.Background()
+	client := DBClient()
+
+	if _, err := client.Doc("User/User13818").
+		Update(ctx, []firestore.Update{
+			{"FlagColor", nil, "Red"},
+			{Path: "Location", Value: "Middle"}}); err != nil {
+		log.Fatalf("Update error: %s\n", err)
+	}
+}
+
+func ReadDoc() {
+	ctx := context.Background()
+	client := DBClient()
+
+	state, err := client.Doc("User/User13818").Get(ctx)
+	U.CheckErr(err)
+
+	_, err = json.MarshalIndent(state.Data(), "", "  ")
+	U.CheckErr(err)
+}
+
+func DeleteDoc() {
+	ctx := context.Background()
+	client := DBClient()
+
+	_, err := client.Doc("User/User13818").Delete(ctx)
+	U.CheckErr(err)
 }
