@@ -61,7 +61,7 @@ func main() {
 	O.ReadDoc_off_chain()
 	endTime5 := time.Now()
 	elapsedTime5 := endTime5.Sub(startTime5)
-	fmt.Printf("OFF_CHAIN STORAGE UPDATE TIME: %v\n", elapsedTime5)
+	fmt.Printf("OFF_CHAIN STORAGE READ TIME: %v\n", elapsedTime5)
 
 	// Off-chain - READ
 	startTime6 := time.Now()
