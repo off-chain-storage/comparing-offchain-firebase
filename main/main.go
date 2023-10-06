@@ -10,7 +10,6 @@ import (
 	F "github.com/off-chain-storage/comparing-offchain-firebase/firebase"
 	O "github.com/off-chain-storage/comparing-offchain-firebase/offchain"
 	U "github.com/off-chain-storage/comparing-offchain-firebase/utils"
-	// service "github.com/off-chain-storage/go-off-chain-storage/service"
 )
 
 func main() {

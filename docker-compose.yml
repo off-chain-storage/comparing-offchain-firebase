@@ -2,13 +2,14 @@ version: '3'
 
 services:
   comparing-node:
+    # image: jinbum99/comparing:latest
     image: comparing
     container_name: comparing-node
     volumes:
       - ./data/:/root/
-    networks:
-      - off-chain-cluster-networks
-networks:
-  off-chain-cluster-networks:
-    external:
-      name: offchainCluster
+#     networks:
+#       - off-chain-cluster-networks
+# networks:
+#   off-chain-cluster-networks:
+#     external:
+#       name: offchainCluster

@@ -47,8 +47,10 @@ func CreateDoc() {
 	client := DBClient()
 
 	_, err := client.Doc("User/User13818").Create(ctx, map[string]interface{}{
-		"capital": "Denver",
-		"pop":     5.5,
+		"Index":  1,
+		"Gender": "M",
+		"UserID": "bum0448",
+		"Name":   "jinbumjinbum",
 	})
 	U.CheckErr(err)
 }

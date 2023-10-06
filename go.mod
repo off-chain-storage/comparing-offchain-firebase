@@ -5,7 +5,7 @@ go 1.20
 require (
 	cloud.google.com/go/firestore v1.12.0
 	github.com/joho/godotenv v1.5.1
-	github.com/off-chain-storage/go-off-chain-storage v1.3.0
+	github.com/off-chain-storage/go-off-chain-storage v1.3.2
 	github.com/sirupsen/logrus v1.9.3
 	go.mongodb.org/mongo-driver v1.12.1
 	google.golang.org/api v0.140.0

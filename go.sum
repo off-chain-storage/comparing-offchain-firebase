@@ -144,6 +144,10 @@ github.com/off-chain-storage/go-off-chain-storage v1.2.8 h1:Jb3Yf+N8o/x7FABcJWOn
 github.com/off-chain-storage/go-off-chain-storage v1.2.8/go.mod h1:r7Zmi3T1DW0dWJc+BwxRsZhNfr2YU6JS6dj8fprtr0k=
 github.com/off-chain-storage/go-off-chain-storage v1.3.0 h1:tix6pysOU9Bsz+RKfMyjLkJSeE8D6UYKsjzQsDpjhqI=
 github.com/off-chain-storage/go-off-chain-storage v1.3.0/go.mod h1:r7Zmi3T1DW0dWJc+BwxRsZhNfr2YU6JS6dj8fprtr0k=
+github.com/off-chain-storage/go-off-chain-storage v1.3.1 h1:jbPLOXYNaInH3N54GFKE43FzBPgeq2QSVI9RtQQoB0o=
+github.com/off-chain-storage/go-off-chain-storage v1.3.1/go.mod h1:r7Zmi3T1DW0dWJc+BwxRsZhNfr2YU6JS6dj8fprtr0k=
+github.com/off-chain-storage/go-off-chain-storage v1.3.2 h1:tC2cDgCZ98kvpxviNDtaUEKxrTEpIcpkhanfvqHtjYc=
+github.com/off-chain-storage/go-off-chain-storage v1.3.2/go.mod h1:r7Zmi3T1DW0dWJc+BwxRsZhNfr2YU6JS6dj8fprtr0k=
 github.com/olekukonko/tablewriter v0.0.5 h1:P2Ga83D34wi1o9J6Wh1mRuqd4mF/x/lgBS7N7AbDhec=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

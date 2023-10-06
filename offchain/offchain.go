@@ -9,6 +9,7 @@ import (
 )
 
 type UserInfo struct {
+	Index  int
 	Gender string
 	UserID string
 	Name   string
@@ -16,6 +17,7 @@ type UserInfo struct {
 
 func CreateDoc_off_chain() {
 	data := UserInfo{
+		Index:  1,
 		Gender: "M",
 		UserID: "bum0448",
 		Name:   "jinbumjinbum",
@@ -62,7 +64,10 @@ func UpdateDoc_off_chain() {
 	collection := db.Collection("fs.files")
 
 	filter := bson.M{"name": "jinbumjinbum"}
-	update := bson.M{"$set": bson.M{"gender": "F"}}
+	update := bson.M{"$set": bson.M{
+		"flag": "Red",
+		"role": "magicion",
+	}}
 
 	_, err = collection.UpdateOne(ctx, filter, update)
 	U.CheckErr(err)
